@@ -72,7 +72,7 @@ async def stop_embed(interaction: discord.Interaction = None):
     embed = discord.Embed(
         title="Shitway Surfers - Game Over",
         description=game(),
-        color=discord.Color.from_rgb(231, 166, 117)
+        color=discord.Color.blurple()
     )
     embed.add_field(
         name=f"Final Score: {score}",
@@ -102,7 +102,7 @@ async def update_message(interaction=None):
     embed = discord.Embed(
         title="Shitway Surfers",
         description=game(),
-        color=discord.Color.from_rgb(231, 166, 117)
+        color=discord.Color.blurple()
     )
     embed.add_field(
         name=f"Score: {score}",
@@ -168,7 +168,7 @@ async def shitwaysurfers(ctx):
     embed = discord.Embed(
         title="Shitway Surfers",
         description=game(),
-        color=discord.Color.from_rgb(231, 166, 117)
+        color=discord.Color.blurple()
     )
     message = await ctx.send(embed=embed, view=MyView())
     await respawn_enemies()
